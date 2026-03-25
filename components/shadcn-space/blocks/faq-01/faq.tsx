@@ -51,7 +51,7 @@ export default function Faq() {
           </h2>
         </div>
         <div>
-          <Accordion className="w-full flex flex-col gap-6">
+          <Accordion type="single" collapsible className="w-full flex flex-col gap-6">
             {faqs.map((faq, index) => (
               <AccordionItem
                 key={`item-${index}`}

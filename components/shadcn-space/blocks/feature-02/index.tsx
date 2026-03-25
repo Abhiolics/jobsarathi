@@ -27,7 +27,7 @@ const featureData = [
 const Feature02 = () => {
   return (
     <>
-      <Feature featureData={featureData} />
+      <Feature />
     </>
   );
 };
