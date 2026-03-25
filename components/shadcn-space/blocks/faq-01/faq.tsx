@@ -51,20 +51,17 @@ export default function Faq() {
           </h2>
         </div>
         <div>
-          <Accordion type="single" collapsible className="w-full flex flex-col gap-6">
-            {faqs.map((faq, index) => (
-              <AccordionItem
-                key={`item-${index}`}
-                value={`item-${index}`}
-                className={cn(
-                  "p-6 border border-border rounded-2xl flex flex-col gap-3 group/item data-[open]:bg-accent transition-colors animate-in fade-in slide-in-from-bottom-8 duration-700 fill-mode-both",
-                  index === 0 && "delay-100",
-                  index === 1 && "delay-200",
-                  index === 2 && "delay-300",
-                  index === 3 && "delay-400",
-                  index === 4 && "delay-500",
-                )}
-              >
+       <Accordion
+  type="single"
+  collapsible
+  defaultValue="item-0"
+  className="w-full flex flex-col gap-6"
+>
+  {faqs.map((faq, index) => (
+    <AccordionItem
+      key={`item-${index}`}
+      value={`item-${index}`}
+    >
                 <AccordionTrigger className="p-0 text-xl font-medium hover:no-underline **:data-[slot=accordion-trigger-icon]:hidden cursor-pointer">
                   {faq.q}
                   <PlusIcon className="w-6 h-6 shrink-0 transition-transform duration-200 group-aria-expanded/accordion-trigger:rotate-45" />
