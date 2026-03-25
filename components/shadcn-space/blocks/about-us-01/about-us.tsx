@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { Instrument_Serif } from "next/font/google";
-import { motion, useInView, useSpring, useTransform } from "motion/react";
+import { motion, useInView, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 const instrumentSerif = Instrument_Serif({

@@ -1,6 +1,6 @@
 "use client";
 import { useRef } from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion" 
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 
